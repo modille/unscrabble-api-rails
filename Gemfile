@@ -4,11 +4,13 @@ gem 'rails', '4.1.4'
 
 gem 'rails-api'
 
-gem 'spring', :group => :development
+gem 'spring', group: :development
 
-gem 'sqlite3'
+gem 'pg'
 
 gem 'tzinfo-data'
+
+gem 'rails_12factor', group: :production
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
@@ -24,3 +26,5 @@ gem 'tzinfo-data'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+ruby "1.9.3"
