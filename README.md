@@ -55,6 +55,32 @@ Response:
       ]
     }
 
+## Wildcards
+
+You can use a `*` in your rack to represent a blank tile.
+
+For example:
+
+Request `POST /unscrabble` with body:
+
+    {
+      "rack": "*y"
+    }
+
+Response:
+
+    {
+      "results": [
+        "ay",
+        "by",
+        "my",
+        "oy",
+        "ya",
+        "ye",
+        "yo"
+      ]
+    }
+
 ## Filtering with a regex
 
 Filtering with a regex is useful in many cases.
