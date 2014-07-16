@@ -15,7 +15,9 @@ If your rack is:
 
 Then you can retrieve all possible words with:
 
-Request `POST /unscrabble?rack=dglooyz`:
+Request:
+
+`POST /unscrabble?rack=dglooyz`
 
 Response:
 
@@ -93,7 +95,7 @@ And your rack is:
 
 `A, H, P, S, T, Y, Z`
 
-You know you can use `S` at N15 to make the word `EXAMPLES`, and you want to reach the triple word bonus to the right, which is on the edge of the board. You could use the regex `s.$` to filter words that will fit:
+You know that you can use `S` at N15 to make the word `EXAMPLES`, and you want to reach the triple word bonus to the right, which is on the edge of the board. You could use the regex `s.$` to filter words that will fit:
 
 Request `POST /unscrabble` with body:
 
