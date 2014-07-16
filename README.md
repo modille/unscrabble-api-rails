@@ -1,4 +1,4 @@
-# Unscrabbler
+# Unscrabbler API
 
 ## Overview
 
@@ -7,7 +7,7 @@ It also supports optionally filtering based on a regular expression.
 
 The dictionary used is the `enable1.txt` dictionary (Words With Friends).
 
-# Example Usage
+## Example Usage
 
 If your rack is:
 
@@ -55,7 +55,7 @@ Response:
       ]
     }
 
-# Filtering with a regex
+## Filtering with a regex
 
 Filtering with a regex is useful in many cases.
 
@@ -90,3 +90,12 @@ Response:
         "sh"
       ]
     }
+
+## TODO
+
+- Improve speed (trie? directed graph? caching?)
+- Version the API
+- Add authentication (OAuth?)
+- Calculate word scores for each result
+- Support multiple dictionaries
+
