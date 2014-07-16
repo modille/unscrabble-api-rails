@@ -16,6 +16,7 @@ class ApplicationController < ActionController::API
 
     IO.foreach UnscrabbleApi::Application.config.dictionary_path do |word|
       word = word.chomp.downcase
+      rack = rack.chomp.downcase
       temp_rack = rack
 
       begin
