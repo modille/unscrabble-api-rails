@@ -9,7 +9,7 @@ It also supports optionally filtering based on a regular expression.
 
 The dictionary used is the `enable1.txt` dictionary (Words With Friends).
 
-As of 2014-07-16, an instance of this app is deployed to Heroku at [http://modille-unscrabble-api-rails.herokuapp.com/](http://modille-unscrabble-api-rails.herokuapp.com/)
+As of 2014-07-16, an instance of this app is deployed to Heroku at `http://modille-unscrabble-api-rails.herokuapp.com/` (Note: only listening for POST requests)
 
 ## Example Usage
 
