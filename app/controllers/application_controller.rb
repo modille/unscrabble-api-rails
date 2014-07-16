@@ -31,7 +31,7 @@ class ApplicationController < ActionController::API
         end
 
         if regex
-          matches << word if word =~ /#{regex}/
+          matches << word if word =~ /#{regex}/i
         else
           matches << word
         end
