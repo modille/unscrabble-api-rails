@@ -3,9 +3,9 @@ class ApplicationController < ActionController::API
   def unscrabble
     if params[:rack].present?
       results = solve( params[:rack], params[:regex] )
-      render json: { results: results }
+      render json: { results: results }, callback: params['callback']
     else
-      render json: { error: I18n.t('error.rack_required') }, status: :unprocessible_entity
+      render json: { error: I18n.t('error.rack_required') }, status: :unprocessible_entity, callback: params['callback']
     end
   end
 
